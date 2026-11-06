@@ -1,57 +1,32 @@
 import { defineConfig } from 'vitepress'
-import sidebarData from './sidebar.json' with { type: 'json' }
 
 const base = process.env.DOCS_BASE || '/'
 
 export default defineConfig({
   base,
-  lang: 'en-US',
-  title: 'ZAKICIT PNB v2',
-  description: 'Documentation for ZAKICIT PNB v2 — Growtopia automation script for CGT/BooLua.',
+  lang: 'id-ID',
+  title: 'ZAKICIT CGT',
+  description: 'Dokumentasi simpel ZAKICIT PNB untuk CreativeGrowtopia (CGT)',
   lastUpdated: true,
   cleanUrls: true,
   themeConfig: {
     nav: [
-      { text: 'Guide', link: '/guide/getting-started' },
+      { text: 'Panduan', link: '/guide/getting-started' },
+      { text: 'Cara PNB', link: '/guide/pnb' },
       { text: 'Settings', link: '/settings' },
-      { text: 'API', link: '/api/globals' },
-      { text: 'Structs', link: '/structs' },
-      { text: 'Examples', link: '/examples' },
     ],
     sidebar: [
       {
-        text: 'Guide',
+        text: 'Panduan',
         items: [
-          { text: 'Getting started', link: '/guide/getting-started' },
-          { text: 'Overview', link: '/guide/overview' },
-          { text: 'Examples', link: '/examples' },
+          { text: 'Getting Started', link: '/guide/getting-started' },
+          { text: 'Cara Pakai PNB', link: '/guide/pnb' },
         ],
       },
       {
-        text: 'Configuration',
+        text: 'Pengaturan',
         items: [
-          { text: 'Settings reference', link: '/settings' },
-          { text: 'Loader', link: '/loader' },
-        ],
-      },
-      { text: 'CGT Globals', collapsed: false, items: sidebarData.api },
-      {
-        text: 'Types',
-        items: [
-          { text: 'Structs', link: '/structs' },
-          { text: 'Enums', link: '/enums' },
-        ],
-      },
-      {
-        text: 'Modules',
-        collapsed: false,
-        items: [
-          { text: 'PNB Core', link: '/modules/pnb' },
-          { text: 'Smart Mag Intel', link: '/modules/smartmag' },
-          { text: 'Renting System', link: '/modules/renting' },
-          { text: 'Web Monitor', link: '/modules/monitor' },
-          { text: 'Paywall Manager', link: '/modules/paywall' },
-          { text: 'GUI', link: '/modules/gui' },
+          { text: 'Daftar Settings', link: '/settings' },
         ],
       },
     ],
@@ -61,8 +36,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/AkhmadZaki14/zakicit' },
     ],
     footer: {
-      message: 'ZAKICIT PNB v2 — script for CGT/BooLua. Unofficial.',
-      copyright: 'AkhmadZaki14 · Community use only.',
+      message: 'ZAKICIT PNB v2 — Simpel Docs',
+      copyright: 'AkhmadZaki14',
     },
   },
 })

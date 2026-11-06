@@ -2,29 +2,25 @@
 layout: home
 
 hero:
-  name: ZAKICIT PNB v2
-  text: CGT Lua Automation Docs
-  tagline: Dokumentasi lengkap script ZAKICIT PNB v2 untuk CreativeGrowtopia (CGT) dan BooLua.
+  name: ZAKICIT CGT
+  text: Bot PNB Growtopia
+  tagline: Script farming otomatis untuk CreativeGrowtopia (CGT) berbasis BooLua. Simpel, stabil, dan bisa dipantau dari web.
   actions:
     - theme: brand
-      text: Panduan Awal
+      text: Mulai di sini
       link: /guide/getting-started
     - theme: alt
-      text: Pengaturan Settings
-      link: /settings
+      text: Cara PNB
+      link: /guide/pnb
     - theme: alt
-      text: CGT Native API
-      link: /api/globals
+      text: Daftar Settings
+      link: /settings
 
 features:
-  - title: The Continental Architecture
-    details: 'Desain modular terintegrasi: Core PNB, Smart Mag Intel (TTL + Advisory), Auto Rent Station, Paywall Auto-Renew/Buy, dan Live Efficiency Tracker.'
-  - title: Sinkronisasi Web Monitor
-    details: 'Heartbeat periodik langsung ke Vercel Fleet Monitor dashboard via HTTP request (X-Monitor-Token auth) dengan delta kalkulator akurat.'
-  - title: GUI v3 Clean Dark
-    details: 'Tampilan ImGui yang ringkas, responsif, dan bebas lag, memudahkan konfigurasi bot on-the-fly tanpa restart script.'
+  - title: Plug & Play
+    details: Download loader.lua, isi world dan koordinat magplant, tekan Start. Bot langsung farming tanpa konfigurasi ribet.
+  - title: Auto Semua
+    details: Remote magplant habis auto ganti. Cheat habis auto beli. Consumable habis auto pakai. Bot diam auto recover.
+  - title: Web Monitor
+    details: Pantau status bot realtime dari browser via Fleet Dashboard. Token-based, aman, bisa multi-bot.
 ---
-
-::: info Build Info
-ZAKICIT PNB v2 dirancang khusus untuk lingkungan **CreativeGrowtopia (CGT)** dengan dukungan API native (`GetTile`, `CheckPath`, `SendPacket`, `ImGui`, `MakeRequest`).
-:::
